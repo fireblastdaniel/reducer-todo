@@ -9,7 +9,7 @@ export const todoReducer = (state, action) => {
             const newTodo = {
                 item: action.payload,
                 completed: false,
-                id: state.todoList.length + 1
+                id: new Date()
             }
             return {
                 ...state,
